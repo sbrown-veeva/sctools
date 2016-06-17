@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OM_approval</fullName>
+    <types>
+        <members>demo_OrderApproval</members>
+        <name>ApexTrigger</name>
+    </types>
+    <!-- <types>
+        <members>Order_vod__c.order_approval</members>
+        <name>ApprovalProcess</name>
+    </types> -->
+    <types>
+        <members>Order_vod__c.Approval_Status__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>order_approval</members>
+        <name>Queue</name>
+    </types>
+    <types>
+        <members>Order_vod__c.override_lock</members>
+        <members>Order_vod__c.status_to_approved</members>
+        <members>Order_vod__c.status_to_in_progress</members>
+        <members>Order_vod__c.status_to_rejected</members>
+        <name>WorkflowFieldUpdate</name>
+    </types>
+    <version>36.0</version>
+</Package>
